@@ -1,6 +1,6 @@
-# AIWritingStudio Release
+# AIWritingStudio Windows 安装包
 
-本仓库保存 AICreationStudio 的 Windows 安装包。
+本仓库保存 AICreationStudio 的 Windows x64 安装包。
 
 ## 版本
 
@@ -8,9 +8,26 @@
 - 构建来源：`AICreationStudio/main@490722becd5e35b7e0c5e29d1554b451220138c4`
 - 平台：Windows x64
 
-## 安装
+## 安装说明
 
-- 普通安装：运行 `AICreationStudio_0.2.0_x64-setup.exe`
-- MSI 部署：使用 `AICreationStudio_0.2.0_x64_en-US.msi`
+### 推荐方式：使用安装程序
 
-安装包的 SHA-256 值见 [`SHA256SUMS.txt`](SHA256SUMS.txt)。
+1. 下载 `AICreationStudio_0.2.0_x64-setup.exe`。
+2. 双击安装程序，按照 Windows 安装向导完成安装。
+3. 安装完成后，从开始菜单或桌面快捷方式启动 AICreationStudio。
+
+### 使用 MSI 安装包
+
+企业部署或需要使用 Windows Installer 时，可使用
+`AICreationStudio_0.2.0_x64_en-US.msi`。双击该文件即可启动安装，也可以交给系统部署工具安装。
+
+如果 Windows 显示安全提示，请先确认文件来源和 SHA-256 校验值，再选择继续运行。
+
+## 文件校验
+
+安装包的 SHA-256 值见 [`SHA256SUMS.txt`](SHA256SUMS.txt)。在 PowerShell 中可执行以下命令校验：
+
+```powershell
+Get-FileHash .\AICreationStudio_0.2.0_x64-setup.exe -Algorithm SHA256
+Get-FileHash .\AICreationStudio_0.2.0_x64_en-US.msi -Algorithm SHA256
+```
