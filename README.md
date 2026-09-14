@@ -5,8 +5,9 @@
 ## 版本
 
 - 版本：`0.2.0`
-- 构建来源：`AICreationStudio/main@490722becd5e35b7e0c5e29d1554b451220138c4`
+- 构建来源：`AICreationStudio/main@1f4426481fe4594fd2706849ef6ee5bbd66da816`
 - 平台：Windows x64
+- 安装程序语言：简体中文
 
 ## 安装说明
 
@@ -19,7 +20,7 @@
 ### 使用 MSI 安装包
 
 企业部署或需要使用 Windows Installer 时，可使用
-`AICreationStudio_0.2.0_x64_en-US.msi`。双击该文件即可启动安装，也可以交给系统部署工具安装。
+`AICreationStudio_0.2.0_x64_zh-CN.msi`。该安装包的安装界面为简体中文；双击该文件即可启动安装，也可以交给系统部署工具安装。
 
 如果 Windows 显示安全提示，请先确认文件来源和 SHA-256 校验值，再选择继续运行。
 
@@ -29,5 +30,5 @@
 
 ```powershell
 Get-FileHash .\AICreationStudio_0.2.0_x64-setup.exe -Algorithm SHA256
-Get-FileHash .\AICreationStudio_0.2.0_x64_en-US.msi -Algorithm SHA256
+Get-FileHash .\AICreationStudio_0.2.0_x64_zh-CN.msi -Algorithm SHA256
 ```
